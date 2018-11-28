@@ -17,12 +17,47 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <style type="text/css">
+        .test {
+            // height: 700px;
+            // background-color: blue;
+        }
+        .saveheight {
+            height: 800px;
+        }
+        .slide2 {
+            height: 800px;
+            background-color: #FFEEFF;
+        }
         .yumenokuni {
             font-size: 78px;
         }
         .shukuhuku {
             font-size: 78px;
             color: red;
+        }
+        .shiganai {
+            color: orange;
+        }
+        .s15 {
+	        font-size: 15px;
+        }
+        .s25 {
+	        font-size: 25px;
+        }
+        .s30 {
+	        font-size: 25px;
+        }
+        .s40 {
+	        font-size: 40px;
+        }
+        .s60 {
+	        font-size: 60px;
+        }
+        .s80 {
+	        font-size: 80px;
+        }
+        .s120 {
+	        font-size: 120px;
         }
     </style>
 </head>
@@ -34,87 +69,172 @@
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
+<!--
+data-x：スライドの横位置
+data-y：スライドの縦位置
+data-z：スライドの奥行き感
+data-scale：スライドの縮尺比率を指定します
+data-rotate-x：横軸を中心として回転
+data-rotate-y：縦軸を中心として回転
+data-rotate：中心を軸に回転
+-->
+
 <div id="impress">
 
-    <div id="title" class="step" data-x="0" data-y="5000" data-scale="6">
-        <h2>しがないラジオ meetup 2</h2>
+    <div id="title" class="step slide2 test" data-x="0" data-y="3000" data-z="4000" data-scale="2">
+        <br/>
+        <br/>
+        <br/>
+        <h2><span class="s80">しがないラジオ meetup2</span></h2>
+        <br/>
         <h2>2018/11/28 @MzRyuKa</h2>
     </div>
 
-    <div class="step" data-x="0" data-y="0" data-z="-4000" data-rotate="330" data-scale="1">
-        <p>やはり俺の転職しなかった<br/>世界線は間違っている？(仮)</p>
+    <div class="step test" data-x="0" data-y="0" data-z="-4000" data-rotate="0" data-scale="1">
+        <q>やはり俺の転職しなかった<br/>世界線は間違っている？</q>
     </div>
 
-    <div class="step slide" data-x="-1000" data-y="-1500">
-        <q>毎日、毎日、仕事は保守ばかり<br/>エクセル＋スクショで<br/>嫌になっちゃうよ</q>
+    <div class="step slide test" data-x="-2000" data-y="-1500">
+        <h2>自己紹介</h2>
+        <q>
+       <span class="s40">
+       ・みずりゅ(@MzRyuKa)<br/>
+       ・新卒で独立系SIerで、いま1X年目<br/>
+       ・<b>SIerあるある</b>は大体経験した<br/>
+       </span>
+       </q>
+       <ul>
+       <span class="s15">
+           <li>例：</li>
+           <li>「新人だけど徹夜」「ダンボールってあったかい」「ベンダー独自フレームワーク」「標準化」「理不尽な、なぜx3分析」</li>
+           <li>「リリース全国行脚」「炎上案件ヘルプでタコ部屋に長机のパイプ椅子」「中国オフショア」「ストレスで結石」</li>
+           <li>「請負アジャイル(10人体制)」「PO+SMを兼務」「リーダ逃走」「雇われPMをもつPL」</li>
+       </span>
+       </ul>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>ある時、わたしは、<br/>しがないラジオ meetupを見つけて<br/>ハッシュタグをつけて<br/>呟いたのさ</q>
+    <div class="step slide test" data-x="-1000" data-y="-1500">
+        <h2>とある日常</h2>
+        <q>毎日 毎日<br/>仕事は保守ばかり<br/>エクセル＋パワポで<br/>嫌になっちゃうよ</q>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
+    <div class="step slide test" data-x="0" data-y="-1500">
+        <q>ある時、わたしは、<br/><b class="s80">しがないラジオ meetup</b>を見つけて<br/><b>はじめて</b>ハッシュタグをつけて<br/>呟いたのさ</q>
+    </div>
+
+    <div class="step slide test" data-x="1000" data-y="-1500">
         <q><img src="img/img01.png"></q>
     </div>
 
-    <div class="step slide" data-x="2000" data-y="-1500" data-rotate="180">
-        <q>はじめて呟いた<br/><b>しがないラジオ</b><br/>というキーワード。<br/>しかし、これを境に、行動は変わっていった。</q>
+    <div class="step slide test" data-x="2000" data-y="-1500" data-rotate="180">
+        <q>はじめて外に向けて呟いた<br/><span class="s80 shiganai"><b>しがないラジオ</b></span><br/>というキーワード。<br/></br>しかし、これを境に<br/><span class="s80"><b>世界</b></span>は変わっていった。</q>
     </div>
 
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>5ページ目It’s a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    <div id="" class="step test" data-x="850" data-y="3000" data-rotate="45" data-scale="2">
+        <q>聴いたPodcastの感想は<br/>ハッシュタグをつけて<br/>呟くようにした。<br/>
+        情報発信している人に少しでも<br/>感謝の気持ちが届くように。</q>
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>6ページ目visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    <div class="step saveheight test" data-x="0" data-y="5000">
+        <q>
+        <span class="s40">するとこんな風に出会いも広がる</span>
+            <img src="img/img02.png" width="90%" height="90%">
+        </q>
     </div>
 
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>7ページ目and <b>tiny</b> ideas</p>
+    <div id="" class="step test" data-x="3500" data-y="2100" data-rotate="180" data-scale="2">
+        <q>気になったイベントや勉強会には<br/>積極的に参加するようにした。<br/><br/>
+          この結果、技術書典5で<br/>zuckeyさんとgamiさんにも</br>あうことができた。<br>
+          <br/>
+          <span class="s25">それと「<b>セイチョウジャーニー</b>」著者全員のサインもGetしたYo!</span><br>
+        </q>
     </div>
 
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
-        <p>8ページ目by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    <div class="step test" data-x="1000" data-y="5000">
+        <q>
+        <span class="s40">成果のひとつ(サイン本)<br/><br/></span>
+            <img src="img/sign_01.png" width="45%" height="45%">
+            <img src="img/sign_02.png" width="45%" height="45%">
+        </q>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>9ページ目the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div id="" class="step slide2 test" data-x="-300" data-y="2325" data-z="-3000" data-rotate="300" data-scale="2">
+        <q>できる範囲で<b>外</b>に向かって<br>アウトプットをするようにした。<br/>
+        <span class="s40">
+        <ul>
+        <li>・ブログを始めた</li>
+        <li>・社外でLTした</li>
+        <li>・Podcastにも出演してみた</li>
+        </ul>
+        </span><br/>
+        出演Podcast：<br/>
+        <span class="s40">
+        ・deploy.fm: <a href="https://takattata.github.io/deployfm/episode/10-main">第10回</a>、<a href="https://takattata.github.io/deployfm/episode/10-omake">第10回おまけ回</a><br/>
+        ・aozora.fm: 出演予定(12月中旬以降？)<br/>
+        </span>
+        </q>
     </div>
 
-    <div class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>10ページ目want to know more?</p>
-        <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
+    <div id="" class="step test" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="2">
+        <q>そして今<br/>この場でLTをしている。<br/><br/>これが背中を押してくれた人への<br/><b>恩送り</b>になると思って。<br/>
+        </q>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>11ページ目one more thing...</p>
+    <div id="" class="step slide2 test" data-x="4200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <q>zuckeyさん、gamiさん、いけさん。<br/><br/>
+          <span class="s60 shukuhuku"><b>「この一歩&nbsp;踏み出したぜ！」</span><br/>#しがないラジオ</b><br/><br/>
+          <span class="s25">
+          sp.35【ゲスト: otty_375】楽しい「しがないラジオ駆動人生」<br/>の1:55:00近辺でしているお話。<br>
+          https://shiganai.org/ep/sp35-otty_375
+          </span>
+        </q>
     </div>
 
-    <div id="its-in-3d" class="step" data-x="4200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">12ページ目have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div id="" class="step test" data-x="6700" data-y="-300" data-scale="2">
+        <q>会社に対しても行動した<br/><br/>
+        <span class="s30">
+        <ul>
+        <li>・社内勉強会への企画出し<br/>
+             <span class="s25">&nbsp;&nbsp;&nbsp;(モブプロ、ユーザストーリーマッピング、心理的安全性ゲーム等)</span>
+        </li>
+        <li>・個人参加イベント／勉強会のレポート提出<br/>
+              <span class="s25">&nbsp; &nbsp;&nbsp;&nbsp;（5ヶ月で29個中15個記述）<span>
+        </li>
+        <li>・面白そうな勉強会/イベントの定期的な紹介</li>
+        <li>・アドベントカレンダーの提案／実施(New)</li>
+        </ul>
+        </span>
+        </q>
     </div>
 
+    <div class="step test" data-x="7300" data-y="2000" data-rotate="20" data-scale="2">
+        <q>あー、なんだ。<br/>これが自分にとっての<br/>「<b class="s60">たの<span class="shiganai">し</span>くて仕方<span class="shiganai">がない</span></b>」<br/>ことかもしれない。</q>
+    </div>
 
-    <div class="step slide" data-x="5000" data-y="5000">
+    <div id="" class="step test" data-x="6000" data-y="4000" data-scale="2">
+        <q>
+          もしかしたら、これは転職しなかったあなたの10年後の姿、かもしれない。<br/><br/>
+          そして、あなたたちは、私が転職していた時に歩んでいたかもしれない別の世界線の自分かもしれない。
+       </q>
+    </div>
+
+    <div class="step slide test" data-x="5000" data-y="5000" data-rotate-y="90">
         <q>しがないラジオとその界隈は</q>
         <q><b class="yumenokuni">夢の国</b>である。</q>
-        <q>だが、目醒めても消えはしない。<br/>いつでも楽しさを思い出せる。</q>
+        <q>でも、目醒めても消えはしない。<br/>いつでも楽しさを思い出せる。</q>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="5000">
-        <q>この界隈の住人たちは、<br/>自らの境遇に絶望せず、<br/>未来を見つめ、<br/>仲間を見つけ、<br/>そして自らの足で<br/>次のステージに進んでいった。</q>
+    <div class="step slide  test" data-x="6000" data-y="5000" data-rotate-x="20">
+        <q>この界隈の住人たちは<br/>自らの境遇に絶望せず<br/>未来を見つめ<br/>仲間を見つけ<br/>そして自らの足で<br/>次のステージに進んでいった。</q>
     </div>
 
-    <div class="step slide" data-x="7000" data-y="5000">
-        <q>彼ら／彼女らのような人々が<br/>今後も増えていけば、<br/>エンジニアの界隈も<br/>きっと安泰だろう。</q>
+    <div class="step slide test" data-x="7000" data-y="5000" data-rotate-x="40">
+        <q>彼ら／彼女らのような人々が<br/>今後も増えていけば<br/>エンジニアの世界<br/>きっと安泰だろう。</q>
     </div>
 
-    <div class="step slide" data-x="8000" data-y="5000">
-        <q>しがないラジオの関係者と<br/>すべてのリスナーに<br/></q>
-        <q><b class="shukuhuku">祝福あれ！！</b></q>
+    <div class="step slide test" data-x="8000" data-y="5000" data-rotate-x="60">
+        <q>zuckeyさん、gamiさん。<br/>これからも<b>しがないラジオ</b>で<br/>楽<span class="shiganai">し</span>くて仕方<span class="shiganai">がない</span>人たちを<br/></q>
+        <q><b class="shukuhuku">送り出してください！</b></q>
     </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
